@@ -110,6 +110,7 @@ const jsConfig: Linter.Config[] = defineConfig([
       'sort-keys': 'off',
       'spaced-comment': ['warn', 'always'],
       'unused-imports/no-unused-imports': 'error',
+      'import-x/no-nodejs-modules': 'off',
     },
   },
 ]);

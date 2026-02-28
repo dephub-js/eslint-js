@@ -1,4 +1,3 @@
-/* eslint-disable sort-keys-fix/sort-keys-fix */
 import { glob } from '@dephub/glob';
 import { cwd } from '@dephub/path';
 import { defineConfig } from 'vite';
