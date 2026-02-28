@@ -32,7 +32,7 @@ const jsConfig: Linter.Config[] = defineConfig([
       parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
       sourceType: 'module',
     },
-    name: 'lint/javascript',
+    name: 'eslint/javascript',
     plugins: {
       prettier,
       safeguard,

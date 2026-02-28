@@ -10,7 +10,7 @@
 ## Features ✨
 
 - ⚡ Modern ESLint flat config (ESM-first)
-- 🎨 Sensible defaults for JS and TS projects
+- 🎨 Sensible defaults for JS projects
 - 🔀 Import sorting and unused import handling
 - 🧹 Prettier-compatible formatting rules
 - 🛠 Easy to extend and customize
@@ -36,7 +36,7 @@ Create an `eslint.config.mjs` file in your project:
 import { defineConfig } from 'eslint/config';
 import jsConfig from '@dephub/eslint-js';
 
-export default defineConfig([...jsConfig]);
+export default defineConfig(jsConfig);
 ```
 
 ### Extending the configuration
