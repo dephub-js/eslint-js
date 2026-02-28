@@ -1,7 +1,7 @@
 {
   "name": "@dephub/eslint-js",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Opinionated modern ESLint configuration for JavaScript projects.",
   "types": "./dist/index.d.ts",
   "main": "./dist/index.js",
@@ -53,7 +53,7 @@
     "@types/eslint": "^9.6.1",
     "eslint": "^10.0.2",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-import-x": "^4.16.1",
     "eslint-plugin-perfectionist": "^5.6.0",
     "eslint-plugin-prettier": "^5.5.5",
     "eslint-plugin-promise": "^7.2.1",

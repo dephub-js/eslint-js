@@ -2,7 +2,7 @@
 import eslint from '@eslint/js';
 import type { Linter } from 'eslint';
 import eslintConfigPrettier from 'eslint-config-prettier';
-import Import from 'eslint-plugin-import';
+import { importX } from 'eslint-plugin-import-x';
 import perfectionist from 'eslint-plugin-perfectionist';
 import prettier from 'eslint-plugin-prettier';
 // @ts-expect-error
@@ -15,7 +15,7 @@ import globals from 'globals';
 
 const jsConfig: Linter.Config[] = defineConfig([
   security.configs.recommended,
-  Import.flatConfigs.recommended,
+  importX.flatConfigs.recommended,
   eslint.configs.recommended,
   eslintConfigPrettier,
   perfectionist.configs['recommended-natural'],
@@ -43,15 +43,6 @@ const jsConfig: Linter.Config[] = defineConfig([
       'arrow-body-style': ['warn', 'as-needed'],
       'consistent-return': 'error',
       eqeqeq: 'error',
-      'import/no-cycle': [
-        'error',
-        {
-          allowUnsafeDynamicCyclicDependency: false,
-          ignoreExternal: true,
-          maxDepth: 2,
-        },
-      ],
-      'import/no-unresolved': 'error',
       'max-len': ['off', { code: 80 }],
       'no-await-in-loop': 'warn',
       'no-console': 'warn',
@@ -119,11 +110,6 @@ const jsConfig: Linter.Config[] = defineConfig([
       'sort-keys': 'off',
       'spaced-comment': ['warn', 'always'],
       'unused-imports/no-unused-imports': 'error',
-    },
-    settings: {
-      'import/resolver': {
-        node: true,
-      },
     },
   },
 ]);
