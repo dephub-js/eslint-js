@@ -1,0 +1,81 @@
+{
+  "name": "@dephub/eslint-js",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Opinionated modern ESLint configuration for JavaScript projects.",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "scripts": {
+    "prepublishOnly": "pnpm clean && pnpm check-types && pnpm build && pnpm lint",
+    "release": "pnpm publish",
+    "check-types": "pnpm tsc --noEmit",
+    "lint": "eslint . --fix --max-warnings 0",
+    "clean": "rm -rf dist",
+    "build": "vite build",
+    "dev": "vite build -w"
+  },
+  "keywords": [
+    "eslint-js",
+    "lint",
+    "eslint",
+    "eslint-config",
+    "javascript",
+    "typescript",
+    "ts",
+    "config",
+    "preset",
+    "linter",
+    "code quality",
+    "frontend",
+    "backend"
+  ],
+  "author": {
+    "name": "Estarlin R",
+    "email": "dev@estarlincito.com",
+    "url": "https://estarlincito.com"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "dist"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/dephub-js/eslint-js#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dephub-js/eslint-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dephub-js/eslint-js/issues"
+  },
+  "dependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/eslint": "^9.6.1",
+    "eslint": "^10.0.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-perfectionist": "^5.6.0",
+    "eslint-plugin-prettier": "^5.5.5",
+    "eslint-plugin-promise": "^7.2.1",
+    "eslint-plugin-safeguard": "^2.0.7",
+    "eslint-plugin-security": "^4.0.0",
+    "eslint-plugin-unused-imports": "^4.4.1",
+    "globals": "^17.3.0",
+    "prettier": "^3.8.1",
+    "prettier-plugin-packagejson": "^3.0.0"
+  },
+  "devDependencies": {
+    "@dephub/glob": "^1.0.1",
+    "@dephub/path": "^1.0.1",
+    "@types/eslint-config-prettier": "^6.11.3",
+    "@types/eslint-plugin-security": "^3.0.1",
+    "@types/node": "^25.3.2",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1",
+    "vite-plugin-dts": "^4.5.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "pnpm@10.30.3"
+}
