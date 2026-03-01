@@ -8,8 +8,10 @@
   "scripts": {
     "prepublishOnly": "pnpm clean && pnpm check-types && pnpm build && pnpm lint",
     "release": "pnpm publish",
+    "docs": "lineo md 'src/**/*.ts' --outFile code.md --outDir temp",
     "check-types": "pnpm tsc --noEmit",
     "lint": "eslint . --fix --max-warnings 0",
+    "fmt": "prettier --write .",
     "clean": "rm -rf dist",
     "build": "vite build",
     "dev": "vite build -w"
