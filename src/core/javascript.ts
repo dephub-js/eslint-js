@@ -18,7 +18,7 @@ const jsConfig: Linter.Config[] = defineConfig([
   importX.flatConfigs.recommended,
   eslint.configs.recommended,
   eslintConfigPrettier,
-  perfectionist.configs['recommended-natural'],
+  perfectionist.configs['recommended-natural'], // 'import-x/no-nodejs-modules': 'off',
   pluginPromise.configs['flat/recommended'],
   { ignores: ['**/node_modules/**', '**/dist/**', '**/temp/**', '**/tpm/**'] },
   {
@@ -110,7 +110,6 @@ const jsConfig: Linter.Config[] = defineConfig([
       'sort-keys': 'off',
       'spaced-comment': ['warn', 'always'],
       'unused-imports/no-unused-imports': 'error',
-      'import-x/no-nodejs-modules': 'off',
     },
   },
 ]);
