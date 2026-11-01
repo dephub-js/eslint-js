@@ -11,9 +11,7 @@
     "declaration": true,
     "forceConsistentCasingInFileNames": true,
     "outDir": "dist",
-    "rootDir": "./",
-    "baseUrl": ".",
-    "paths": { "@/*": ["src/*"] }
+    "rootDir": "./"
   },
   "include": ["src/**/*.ts", "vite.config.ts"],
   "exclude": ["node_modules", "dist"]
